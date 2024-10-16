@@ -79,65 +79,69 @@ def custom_css():
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
     html, body, [class*="css"] {
-        font-family: 'Roboto', sans-serif;
-        color: black; /* Set text color to black */
+        font-family: 'Roboto', sans-serif !important;
+        color: black !important;  /* Ensure all text is black */
     }
     .stApp {
-        background-color: #f0f2f6;
+        background-color: #f0f2f6 !important;
     }
     .main {
-        background-color: #ffffff;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff !important;
+        border-radius: 10px !important;
+        padding: 20px !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
     }
     .stTextInput > div > div > input {
-        background-color: #f8f9fa;
-        border: 1px solid #ced4da;
-        border-radius: 5px;
+        background-color: #f8f9fa !important;
+        border: 1px solid #ced4da !important;
+        border-radius: 5px !important;
+        color: black !important;
     }
     .stButton > button {
-        background-color: #007bff;
-        color: white;
-        border-radius: 5px;
-        border: none;
-        padding: 10px 20px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
+        background-color: #007bff !important;
+        color: white !important;
+        border-radius: 5px !important;
+        border: none !important;
+        padding: 10px 20px !important;
+        font-weight: bold !important;
+        transition: background-color 0.3s ease !important;
     }
     .stButton > button:hover {
-        background-color: #0056b3;
+        background-color: #0056b3 !important;
     }
     .stSelectbox {
-        background-color: #f8f9fa;
-        border-radius: 5px;
+        background-color: #f8f9fa !important;
+        border-radius: 5px !important;
+        color: black !important;
     }
     .stChat {
-        border-radius: 10px;
-        padding: 15px;
-        background-color: #ffffff;
-        border: 1px solid #e9ecef;
-        margin-bottom: 10px;
+        border-radius: 10px !important;
+        padding: 15px !important;
+        background-color: #ffffff !important;
+        border: 1px solid #e9ecef !important;
+        margin-bottom: 10px !important;
+        color: black !important;
     }
     .sidebar .sidebar-content {
-        background-color: #343a40;
-        color: #ffffff;
+        background-color: #343a40 !important;
+        color: #ffffff !important;
     }
     
     /* Responsive adjustments */
     @media only screen and (max-width: 768px) {
         .stButton > button, .stTextInput > div > div > input {
-            width: 100%;
+            width: 100% !important;
         }
         .main {
-            padding: 15px;
+            padding: 15px !important;
         }
         .stChat {
-            padding: 10px;
+            padding: 10px !important;
         }
     }
     </style>
     """, unsafe_allow_html=True)
+
 
 
 def sidebar():
