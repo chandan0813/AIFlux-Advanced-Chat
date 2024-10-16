@@ -74,74 +74,6 @@ def set_page_config():
         initial_sidebar_state="expanded"
     )
 
-def custom_css():
-    st.markdown("""
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-    html, body, [class*="css"] {
-        font-family: 'Roboto', sans-serif !important;
-        color: #212529 !important;  /* Darker text for readability */
-    }
-    .stApp {
-        background-color: #f8f9fa !important;  /* Lighter background */
-    }
-    .main {
-        background-color: #ffffff !important;
-        border-radius: 10px !important;
-        padding: 20px !important;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;  /* Lighter shadow */
-    }
-    .stTextInput > div > div > input {
-        background-color: #ffffff !important;  /* White input field */
-        border: 1px solid #ced4da !important;
-        border-radius: 5px !important;
-        color: #495057 !important;  /* Darker text for input */
-    }
-    .stButton > button {
-        background-color: #007bff !important;  /* Primary blue button */
-        color: white !important;
-        border-radius: 5px !important;
-        border: none !important;
-        padding: 10px 20px !important;
-        font-weight: bold !important;
-        transition: background-color 0.3s ease !important;
-    }
-    .stButton > button:hover {
-        background-color: #0056b3 !important;  /* Darker hover effect */
-    }
-    .stSelectbox {
-        background-color: #ffffff !important;
-        border-radius: 5px !important;
-        color: #495057 !important;
-    }
-    .stChat {
-        border-radius: 10px !important;
-        padding: 15px !important;
-        background-color: #f1f3f5 !important;  /* Lighter chat background */
-        border: 1px solid #dee2e6 !important;
-        margin-bottom: 10px !important;
-        color: #212529 !important;  /* Darker text for chat */
-    }
-    .sidebar .sidebar-content {
-        background-color: #ffffff !important;  /* Light sidebar background */
-        color: #212529 !important;  /* Dark text for sidebar */
-        border-right: 1px solid #dee2e6 !important;  /* Light border for sidebar */
-    }
-
-    /* Responsive adjustments */
-    @media only screen and (max-width: 768px) {
-        .stButton > button, .stTextInput > div > div > input {
-            width: 100% !important;
-        }
-        .main {
-            padding: 15px !important;
-        }
-        .stChat {
-            padding: 10px !important;
-        }
-    }
-    </style>
-    """, unsafe_allow_html=True)
 
 
 
@@ -184,7 +116,7 @@ def main():
         st.session_state.conversation_started = False
     
     set_page_config()
-    custom_css()
+    #custom_css()
     selected_model = sidebar()
     
     if not st.session_state.conversation_started:
