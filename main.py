@@ -80,6 +80,7 @@ def custom_css():
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
     html, body, [class*="css"] {
         font-family: 'Roboto', sans-serif;
+        color: black; /* Set text color to black */
     }
     .stApp {
         background-color: #f0f2f6;
@@ -137,6 +138,7 @@ def custom_css():
     }
     </style>
     """, unsafe_allow_html=True)
+
 
 def sidebar():
     with st.sidebar:
