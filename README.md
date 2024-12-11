@@ -24,7 +24,7 @@ To run the AIFlux Advanced Chat app on your local machine, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/aiflux-advanced-chat.git
+   git clone https://github.com/chandan0813/aiflux-advanced-chat.git
    cd aiflux-advanced-chat
 2. Create and activate a virtual environment:
    ```bash
